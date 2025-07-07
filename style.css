@@ -218,6 +218,10 @@ nav{
 #summery{
     background-color: #403D38;
     padding-block: 20px;
+    ul{
+        line-height :1.5 ;
+        list-style: disc;
+    }
     .container{
         display: flex;
         justify-content: space-evenly;
@@ -251,4 +255,5 @@ footer{
 
         width: 300px;
     }
+    
 }
