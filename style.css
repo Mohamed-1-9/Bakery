@@ -17,6 +17,9 @@ img{
 }
 span{
         margin-right: 10px;
+        img{
+            border-radius:0 ;
+        }
     }
 /* ! -------------------- Header Start ------------------------- */
 
@@ -237,7 +240,6 @@ nav{
     padding-left: 10px;
 }
 /*!  -------------------- Summery End ------------------------- */
-
 footer{
     padding: 50px;
     background-color: #353330;
