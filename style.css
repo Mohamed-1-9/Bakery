@@ -6,14 +6,28 @@
 ul{
     list-style: none;
 }
+body{
+    font-family: sans-serif;
+}
 img{
       width :   100%    ;
       border-radius: 20px;
         }
-
+h1{
+    font-size: 44px !important;
+}
+h2{
+    font-size: 32px !important;
+}
+p{
+    font-size: 18px  !important; 
+}
 .container{
     width: 80%;
     margin: auto;
+}
+.fa-solid{
+    margin-right: 10px;
 }
 span{
         margin-right: 10px;
@@ -31,15 +45,15 @@ header{
     color: white;
     background-size: cover;
     
-    
-    
+    position: relative;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 20px
 }
+
 .logo{
     flex-basis: 200px;
     /* display: inline-block; */
@@ -66,8 +80,10 @@ nav{
 .header-content{
 
     text-align: center;
-    position: relative;
-    top: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
     font-size: x-large;
     button{
         margin-top: 15px;
