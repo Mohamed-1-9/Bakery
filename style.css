@@ -293,7 +293,7 @@ footer{
 /* responsive for moblie */
 @media screen and (max-width: 768px){
     header{
-        height: 60vh;
+        height: 100vh;
     }
     .header-content{
         font-size: 20px;
@@ -376,7 +376,7 @@ footer{
 /* responsive for tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px){
     header{
-        height: 70vh;
+        height: 100vh;
     }
     .header-content{
         font-size: 24px;
