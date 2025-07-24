@@ -72,12 +72,23 @@ nav{
     ul{
     
         font-size: 20px;
-        li{
+        li {
             cursor: pointer;
             display: inline-block;
             margin-right: 10px;
+            
+            
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: all .3s ;
         }
     }
+}
+.nav-list a:hover{
+    color: rgb(150, 123, 82);
+
 }
 .nav-list li:last-child{
     margin-right: 0;
@@ -274,6 +285,117 @@ footer{
     img{
 
         width: 300px;
+    }
+    
+}
+
+/* responsive for moblie */
+@media screen and (max-width: 768px){
+    header{
+        height: 60vh;
+    }
+    .header-content{
+        font-size: 20px;
+    }
+    /* make the nav list as a box when click it ot open not a big element */
+    .nav-list{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #403D38;
+        display: none;
+        z-index: 1000;
+    }
+    
+    .nav-list ul li{
+        font-size: 16px;
+    }
+    .nav-list ul li a{
+        margin-right: 5px;
+    }
+    .about-image img{
+        width: 100%;
+    }
+    #Location .location-image img{
+        width: 100%;
+    }
+    #Offers .offers-cards .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #About{
+        .about-image img{
+            width: 100% !important;
+        }
+        .about-content{
+            width: 100%;
+        }
+    }
+    #Location{
+        .container{
+            flex-direction: column;
+            .location-image{
+                width: 100%;
+            }
+            .location-content{
+                width: 100%;
+            }
+        }
+    }
+    #Contact{
+        .container{
+            flex-direction: column;
+            .contact-map{
+                width: 100%;
+            }
+            .contact-content{
+                width: 100%;
+            }
+        }
+        
+    }
+    
+    .about-content{
+        width: 100%;
+    }
+    #summery{
+        .container{
+            flex-direction: column;
+            .card{
+                width: 100%;
+                padding-right: 0;
+                border-right: none;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+}
+/* responsive for tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    header{
+        height: 70vh;
+    }
+    .header-content{
+        font-size: 24px;
+    }
+    .nav-list ul li{
+        font-size: 18px;
+    }
+    .nav-list ul li a{
+        margin-right: 10px;
+
+    }
+    .about-image img{
+        width: 100%;
+    }
+    #Location .location-image img{
+        width: 100%;
+    }
+    #Offers .offers-cards .card{
+        width: 48%;
+        margin-bottom: 20px;
     }
     
 }
